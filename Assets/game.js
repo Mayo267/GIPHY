@@ -13,7 +13,7 @@ $.ajax({
 
     $("#gif-view").empty();
 
-    for (let i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
     var div = $("<div>");
     var rating = results[i].rating;
     var p = $("<p>").text("Rating: " + rating);
