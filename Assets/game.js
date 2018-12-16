@@ -1,8 +1,6 @@
-let actor = ["Seth Rogen", "Tom Cruise", "Richard Gere", "Jason Segel"];
-
+var actor = ["Seth Rogen", "Tom Cruise", "Richard Gere", "Jason Segel"];
 
 function displayActor (){
-
 var actor = $(this).attr("data-name");
 var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + actor + "&api_key=wH45n8pCbWdmGgONQpIimBMLweZWUWKQ";
 
