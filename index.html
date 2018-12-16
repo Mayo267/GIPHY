@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../GIPHY/Assets/Style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>GIPHY</title>
+    <title>Actor Gifs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">   
+    <link rel="stylesheet" href="../GIPHY/Assets/Style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="buttons">
-<button data-person="arnold schwarzenegger">
-  I'll be back
-</button>
-<button data-person="michael j fox">
-  My happiness grows in direct proportion to my acceptance,
-  and in inverse proportion to my expectations.
-</button>
 
-<div id = "gifs-appear-here"></div>
+    <nav class="navbar navbar-dark bg-primary">
+            <form class="form-inline">
+                <input id="actor-input" class="form-control mr-lg-2" type="search" placeholder="Search for Gifs!">
+                <button id="add-actor" class="btn btn-danger" type="submit">Go For It!</button>
+            </form>
+    </nav>
 
+    <div class="container">
+            <div id="buttons">
+            </div>
 
-<script src="../GIPHY/Assets/game.js"></script>
+            <div id="gif-view">   
+            </div>
+    </div>
+    <script src="../GIPHY/Assets/game.js"></script>
 </body>
 
 </html>
